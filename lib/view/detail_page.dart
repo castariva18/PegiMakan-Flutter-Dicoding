@@ -1,11 +1,9 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:pegimakan/model/tourism_place.dart';
+part of 'view.dart';
 
 var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
 
 class DetailScreen extends StatelessWidget {
-  final TourismPlace place;
+  final FoodPlace place;
 
   DetailScreen({required this.place});
 
@@ -24,7 +22,7 @@ class DetailScreen extends StatelessWidget {
 }
 
 class DetailMobilePage extends StatelessWidget {
-  final TourismPlace place;
+  final FoodPlace place;
 
   DetailMobilePage({required this.place});
 
@@ -146,7 +144,7 @@ class DetailMobilePage extends StatelessWidget {
 }
 
 class DetailWebPage extends StatefulWidget {
-  final TourismPlace place;
+  final FoodPlace place;
 
   DetailWebPage({required this.place});
 
