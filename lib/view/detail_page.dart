@@ -43,7 +43,7 @@ class DetailMobilePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CircleAvatar(
-                          backgroundColor: Colors.grey,
+                          backgroundColor: Colors.amber,
                           child: IconButton(
                             icon: Icon(
                               Icons.arrow_back,
@@ -239,7 +239,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                 children: [
                                   Row(
                                     children: <Widget>[
-                                      Icon(Icons.calendar_today),
+                                      Icon(Icons.date_range),
                                       SizedBox(width: 8.0),
                                       Text(
                                         widget.place.openDays,
@@ -252,7 +252,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                               ),
                               Row(
                                 children: <Widget>[
-                                  Icon(Icons.access_time),
+                                  Icon(Icons.av_timer),
                                   SizedBox(width: 8.0),
                                   Text(
                                     widget.place.openTime,
@@ -263,7 +263,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                               SizedBox(height: 8.0),
                               Row(
                                 children: <Widget>[
-                                  Icon(Icons.monetization_on),
+                                  Icon(Icons.money),
                                   SizedBox(width: 8.0),
                                   Text(
                                     widget.place.ticketPrice,
@@ -316,8 +316,8 @@ class _FavoriteButtonState extends State<FavoriteButton> {
   Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(
-        isFavorite ? Icons.favorite : Icons.favorite_border,
-        color: Colors.red,
+        isFavorite ? Icons.star : Icons.star_border,
+        color: Colors.amberAccent,
       ),
       onPressed: () {
         setState(() {

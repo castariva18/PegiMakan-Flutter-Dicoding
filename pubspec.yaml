@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  carousel_slider: ^4.0.0
+  form_field_validator: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
